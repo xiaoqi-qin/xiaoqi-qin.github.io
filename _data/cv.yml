@@ -39,7 +39,8 @@
       institution: "Peking University, Beijing, China — Supervisor: Prof. Hao Tang"
       year: Feb 2026 - Present
       description:
-        - "As part of an ongoing industry collaboration with YAHAHA, co-developed a multi-view first-person interactive world model for highly dynamic CS:GO scenes by adapting LingBot-World, a 14B action-conditioned video DiT; enabled synchronized generation across viewpoints, cross-view consistency, a persistent world state, complex action-conditioned interaction, and long-horizon rollouts."
+        - "Ongoing industry collaboration with YAHAHA. [Project Page & Demos](https://zhengqisun.github.io/multiview-world-model/)"
+        - "Co-developed a multi-view world model for CS:GO that separates shared world evolution from observer-specific video generation. Joint actions advance an engine-authoritative state; geometric and player-state conditions guide a shared video model. Additional observers reuse the same learned weights through independent rendering calls."
         - "Designed and trained a residual Map Memory conditioning adapter with LoRA for the 14B model; ran and debugged distributed experiments on a 16× NVIDIA H200 GPU cluster, diagnosing failures across the data, training, and systems stack."
         - "Built the end-to-end data and evaluation pipeline from raw gameplay recordings to synchronized multi-view clips and Map Memory conditions, covering spatial grounding, cross-view consistency, world stability, and long-horizon behavior."
 
