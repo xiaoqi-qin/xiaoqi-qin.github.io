@@ -42,16 +42,27 @@ layout: default
     <h2 id="research-title">Research</h2>
     <h3 class="section-subheading">Current Project</h3>
     <article class="project-entry">
-      <a class="project-thumbnail" href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}" aria-label="Open the project overview">
-        <span class="mini-views" aria-hidden="true">
-          <span class="mini-view mini-view-left"></span>
-          <span class="mini-view mini-view-right"></span>
-          <span class="mini-memory">Map Memory</span>
-        </span>
-      </a>
+      <figure class="project-demo">
+        <video
+          controls
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          width="1664"
+          height="960"
+          poster="{{ '/assets/img/multiview-demo.jpg' | relative_url }}"
+          aria-label="Four synchronized generated first-person views of one CS:GO scene"
+        >
+          <source src="https://zhengqisun.github.io/multiview-world-model/assets/video/selected-20260905/04-four-view-scene.mp4" type="video/mp4">
+          <a href="https://zhengqisun.github.io/multiview-world-model/">Watch the multi-view demos</a>
+        </video>
+        <figcaption>Four-view generation</figcaption>
+      </figure>
       <div class="project-description">
         <h3>
-          <a href="{{ '/projects/multi-view-interactive-world-model/' | relative_url }}">Map-Conditioned Multi-View Interactive World Modeling</a>
+          <a href="https://zhengqisun.github.io/multiview-world-model/">Map-Conditioned Multi-View Interactive World Modeling</a>
         </h3>
         <p class="project-meta">Peking University · Prof. Hao Tang's Group</p>
         <p class="project-collaboration">
@@ -59,7 +70,13 @@ layout: default
           <a href="https://yahaha.com/">YAHAHA</a>
           <span>· Ongoing</span>
         </p>
-        <p>Research on multi-view interactive world models, with a focus on cross-view consistency and action-conditioned video generation.</p>
+        <p>
+          Developing a multi-view interactive world model that generates first-person videos from a shared 3D world state. The framework combines
+          map-derived geometric conditioning and player-state information with a shared video diffusion model.
+        </p>
+        <p class="project-links">
+          <a href="https://zhengqisun.github.io/multiview-world-model/">Project Page &amp; Demos</a>
+        </p>
       </div>
     </article>
   </section>
